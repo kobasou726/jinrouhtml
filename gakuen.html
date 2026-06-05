@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>マイクラ人狼PVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal img {
+  width: 75vw;
+  height: auto;
+}
+</style>
+</head>
+<body>
+    <!-- ヘッダー -->
+     <header>
+
+  <h1>
+    <a href="home.html">
+      <img src="images/logo.png" alt="ロゴ">
+    </a>
+  </h1>
+
+  <nav id="global_navi">
+    <ul>
+      <li><a href="home.html">トップ</a></li>
+      <li><a href="ru-ru.html">遊び方</a></li>
+      <li><a href="yakusyoku.html">役職</a></li>
+      <li><a href="map.html">マップ</a></li>
+      <li><a href="toi.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+     <!--wrapper-->
+  <div id="wrapper">
+    <!--メイン-->
+    <div id="main">
+      <section id="gakuenn">
+        <h2>マップ「人狼学園」についての解説</h2>
+        <p>「人狼学園」は桜が咲き誇る春の学園を舞台とした広大なマップで大人数でのプレイにおすすめです。<br>
+          このマップは外と学園内の二つに分かれており、外は高低差がほとんどなく障害物もないため短期戦が好きな人におすすめです。<br>
+          学園内は死角が多く一部の部屋に入れるようになっています。</p>
+
+        <p>こちらは人狼学園の参考写真です。</p>
+        <div class="map-images">
+<img src="images/ga1.jpg" alt="人狼学園の写真" onclick="openImage(this.src)">
+<img src="images/ga2.jpg" alt="人狼学園の写真" onclick="openImage(this.src)">
+<img src="images/ga3.jpg" alt="人狼学園の写真" onclick="openImage(this.src)">
+<img src="images/ga4.jpg" alt="人狼学園の写真" onclick="openImage(this.src)">
+        </div>
+      </section>     
+    </div>
+  </div> 
+<div id="modal" onclick="closeImage()" style="display:none;">
+  <img id="modalImg">
+</div>
+
+  <!--フッター-->
+  <footer>
+  <div id="footer_nav">
+      <ul>
+        <li><a href="home.html">トップ</a></li>
+        <li><a href="ru-ru.html">遊び方</a></li>
+        <li><a href="yakusyoku.html">役職</a></li>
+        <li><a href="map.html">マップ</a></li>
+        <li><a href="toi.html">お問い合わせ</a></li>
+        <li><a href="omake.html">おまけ</a></li>
+        </ul>
+    </div>
+  </footer>
+  <script>
+function openImage(src) {
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeImage() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+

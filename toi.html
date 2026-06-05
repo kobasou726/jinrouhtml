@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>マイクラ人狼PVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- ヘッダー -->
+     <header>
+
+  <h1>
+    <a href="home.html">
+      <img src="images/logo.png" alt="ロゴ">
+    </a>
+  </h1>
+
+  <nav id="global_navi">
+    <ul>
+      <li><a href="home.html">トップ</a></li>
+      <li><a href="ru-ru.html">遊び方</a></li>
+      <li><a href="yakusyoku.html">役職</a></li>
+      <li><a href="map.html">マップ</a></li>
+      <li class="current"><a href="toi.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+     <!-- メインビジュアル -->
+      <div id="otoiawase">
+    <img src="images/otoiawase.png" alt="マイクラ人狼PVPメインビジュアル">
+  </div>
+     <!--wrapper-->
+  <div id="wrapper">
+    <!--メイン-->
+    <div id="main">
+        <article>
+        <h2>お問い合わせ</h2>
+        <p class="lead">お気軽にお問い合わせください</p>
+        <p>下記メールフォームをご記入いただき、「送信する」ボタンを押してください。</p>
+        <p>「<span class="must">※</span>」は必須項目です。</p>
+        <section>
+          <h2>お問い合わせフォーム</h2>
+          <form id="entry" onsubmit="showMessage(); return false;">         
+
+            <dl>
+              <dt>お名前 <span class="must">※</span></dt>
+              <dd><input type="text" name="name" id="name" required></dd>
+              <dt>マイクラ人狼PVPの評価</dt>
+              <dd>
+                <label><input type="radio" name="questionnaire" id="questionnaire1" value="つまらない">つまらない</label>
+                <label><input type="radio" name="questionnaire" id="questionnaire2" value="普通">普通</label>
+                <label><input type="radio" name="questionnaire" id="questionnaire3" value="楽しい">楽しい</label>
+              </dd>
+             
+              <dt>お問い合わせ種別</dt>
+              <dd>
+                <label><input type="checkbox" name="category" id="category1" value="バグ報告">バグ報告</label>
+                <label><input type="checkbox" name="category" id="category2" value="プレイヤーの問題報告">プレイヤーの問題報告</label>
+                <label><input type="checkbox" name="category" id="category3" value="その他問い合わせ">その他問い合わせ</label>
+              </dd>
+              <dt>お問い合わせ内容</dt>
+              <dd>
+                <textarea name="detail" id="detail"></textarea>
+              </dd>
+            </dl>
+            <p id="submit_button_cover_cover">
+                <input type="submit" id="submit_button" value="送信する">
+            </p>
+          </form>
+        </section>
+      </article>
+    </div>
+  </div>
+  <!--フッター-->
+  <footer>
+  <div id="footer_nav">
+      <ul>
+        <li><a href="home.html">トップ</a></li>
+        <li><a href="ru-ru.html">遊び方</a></li>
+        <li><a href="yakusyoku.html">役職</a></li>
+        <li><a href="map.html">マップ</a></li>
+        <li><a href="toi.html">お問い合わせ</a></li>
+        <li><a href="omake.html">おまけ</a></li>
+        </ul>
+    </div>
+  </footer>
+  <script>
+function showMessage() {
+  alert("お問い合わせありがとうございました！");
+}
+</script>
+</body>
+</html>

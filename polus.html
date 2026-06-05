@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>マイクラ人狼PVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal img {
+  width: 75vw;
+  height: auto;
+}
+</style>
+</head>
+<body>
+    <!-- ヘッダー -->
+     <header>
+
+  <h1>
+    <a href="home.html">
+      <img src="images/logo.png" alt="ロゴ">
+    </a>
+  </h1>
+
+  <nav id="global_navi">
+    <ul>
+      <li><a href="home.html">トップ</a></li>
+      <li><a href="ru-ru.html">遊び方</a></li>
+      <li><a href="yakusyoku.html">役職</a></li>
+      <li><a href="map.html">マップ</a></li>
+      <li><a href="toi.html">お問い合わせ</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+     <!--wrapper-->
+  <div id="wrapper">
+    <!--メイン-->
+    <div id="main">
+      <section>
+        <h2>マップ「Polus」についての解説</h2>
+      <p>このマップはAmong usのマップ「Polus」を再現したマップで中人数以下におすすめなマップです。<br>
+        このマップは主に建物内と外に分かれており、建物内にはハイドスポットがいくつも存在して奇襲が可能です。<br>
+        また死角が多いので気を付ける必要があります。外エリアでは建物の上に上がることができエリア全体が見下ろせます。<br>
+        基本的に上をとるのが強いので意識してみましょう。</p>
+      </section>
+      <section>
+      <h2>特殊ギミック「ベント」</h2>
+      <p>このマップには実際にAmong usにある「ベント」というギミックがあります。<br>
+        ボタンを押すと対応した場所にテレポートします。<br>
+      上手く利用して相手の隙を突こう。</p>
+      <img src="images/bento.JPEG" alt="ベント">
+<p>ベントはすべてのベントにアクセスはできません。<br>
+ベントの場所、経路はこちらの図で確認してください。</p>
+<p>※画像クリックで大きく表示されます。</p>
+      <img src="images/bento.png" alt="ベントの立ち位置の画像" width="300" onclick="openImage(this.src)">
+</section>
+      <section id="polus">
+        <p>こちらはPolusの参考写真です。</p>           
+<div class="map-images">
+  <img src="images/po1.jpg" alt="Polusの写真" onclick="openImage(this.src)">
+  <img src="images/po2.jpg" alt="Polusの写真" onclick="openImage(this.src)">
+  <img src="images/po3.jpg" alt="Polusの写真" onclick="openImage(this.src)">
+  <img src="images/po4.jpg" alt="Polusの写真" onclick="openImage(this.src)">
+  </div>
+      </section>    
+    </div>
+  </div>
+  <div id="modal" onclick="closeImage()" style="display:none;">
+  <img id="modalImg">
+</div>
+      <!--フッター-->
+  <footer>
+  <div id="footer_nav">
+      <ul>
+        <li><a href="home.html">トップ</a></li>
+        <li><a href="ru-ru.html">遊び方</a></li>
+        <li><a href="yakusyoku.html">役職</a></li>
+        <li><a href="map.html">マップ</a></li>
+        <li><a href="toi.html">お問い合わせ</a></li>
+        <li><a href="omake.html">おまけ</a></li>
+        </ul>
+    </div>
+  </footer>
+  <script>
+function openImage(src) {
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("modalImg").src = src;
+}
+
+function closeImage() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+</body>
+</html>
